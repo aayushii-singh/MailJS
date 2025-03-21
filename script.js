@@ -9,5 +9,12 @@ function checkEmail() {
     document.getElementById("result").innerText = result;
 }
 
-//valid--abc@bridgelabz.co     abc.xyz@bridgelabz.co.in
-//invalid---abc@xyz.co.in (Missing "bridgelabz")     xyz@bridgelabz.co.in (Missing "abc")
+/* 
+✅ Valid Emails (Should Pass)
+1. abc@bridgelabz.co
+2. abc.xyz@bridgelabz.co.in
+
+❌ Invalid Emails (Should Fail)
+1. abc@xyz.co.in (Missing "bridgelabz")
+2. abcxyz@bridgelabz.co.in (Missing "." after "abc")
+*/
