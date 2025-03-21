@@ -1,5 +1,5 @@
 function validateEmail(email) {
-    let pattern = /^abc(\.[a-zA-Z0-9]+)?@bridgelabz\.co(\.[a-zA-Z]{2,})?$/;
+    let pattern = /^abc([._+][a-zA-Z0-9]+)?@bridgelabz\.co(\.[a-zA-Z]{2,})?$/;
     return pattern.test(email);
 }
 
@@ -10,11 +10,11 @@ function checkEmail() {
 }
 
 /* 
-✅ Valid Emails (Should Pass)
-1. abc@bridgelabz.co
-2. abc.xyz@bridgelabz.co.in
+✅ Valid Emails:
+1. abc.xyz@bridgelabz.co.in
+2. abc+test@bridgelabz.co
 
-❌ Invalid Emails (Should Fail)
-1. abc@bridgelabzcom (Missing "." before "co")
-2. abc@bridgelabz.in (Missing "co")
+❌ Invalid Emails:
+1. abc$xyz@bridgelabz.co.in  (Invalid special character `$`)
+2. abc&test@bridgelabz.co    (Invalid special character `&`)
 */
