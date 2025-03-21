@@ -15,6 +15,6 @@ function checkEmail() {
 2. abc.xyz@bridgelabz.co.in
 
 ❌ Invalid Emails (Should Fail)
-1. abc@xyz.co.in (Missing "bridgelabz")
-2. abcxyz@bridgelabz.co.in (Missing "." after "abc")
+1. abc@bridgelabzcom (Missing "." before "co")
+2. abc@bridgelabz.in (Missing "co")
 */
